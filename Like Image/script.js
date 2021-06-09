@@ -41,4 +41,7 @@ const createHeart = (e) => {
 
   //set times liked
   times.innerHTML = ++timesLiked
+
+  //remove each heart element from DoM after 1s
+  setTimeout(() => heart.remove(), 1000)
 }
